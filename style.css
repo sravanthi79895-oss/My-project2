@@ -5,23 +5,26 @@
 
 .container{
     width: 500px;
+    height: 300px;
     border: 2px solid black;
     background-image: url(./assets/image.png);
     background-position: center;
     border-radius: 20px;
     overflow: hidden;
-    background-size: center;
+    background-size: cover;
 }
 .scroll{
     height: 100%;
     font-size: 1.3rem;
     transform: translateX(100%);
     transition: all 1s linear 0s;
+    backdrop-filter: blur(5px) brigthness(50%);
+    color: pink;
     padding: 10px;
     overflow: hidden;
 
 }
-.container:hover{
+.container:hover>.scroll{
     transform: translateX(0px);
 }
 .btn{
@@ -34,8 +37,8 @@
     transition: all 0.3s linear 0s;
 }
 .btn:hover{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     transform: scale(1.1);
 }
 .box{
@@ -49,26 +52,25 @@
 h1{
     width: 100;
     border: 2px solid white;
-    background-color: blue;
 }
-.new{
+.abs{
     background-color: pink;
 }
-.now{
+.int{
     background-color: aqua;
 }
-.ne{
+.work{
     background-color: bisque;
 }
-.nee{
+.adv{
     background-color: yellowgreen;
 }
-.no{
+.lim{
     background-color: antiquewhite;
 }
-.nw{
+.con{
     background-color: powderblue;
 }
-.nex{
+.fut{
     background-color: gold;
 }
